@@ -12,9 +12,11 @@ import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 const Header = ({ currentUser, hidden }) => {
     return(
         <HeaderContainer>
+
             <LogoContainer to="/">
                 <Logo className='logo' />
             </LogoContainer>
+            
             <OptionsContainer>
                 <OptionLink to="/shop"> SHOP </OptionLink>  
                 <OptionLink to="/contact">CONTACT </OptionLink>
