@@ -22,7 +22,7 @@ class ShopPage extends React.Component{
         const { updateCollections} = this.props
 
         const collectionRef = firestore.collection('colletions');
-
+ 
         collectionRef.get().then(snapshot => {
            const collectionsMap = convertCollectionsSnapshotToMap(snapshot)
            updateCollections(collectionsMap);
@@ -40,7 +40,6 @@ class ShopPage extends React.Component{
         )
     }
 } 
-
 const mapDispatchToProps = (dispatch) => {
     return {
         updateCollections: (collectionsMap) => dispatch(updateCollection(collectionsMap))
