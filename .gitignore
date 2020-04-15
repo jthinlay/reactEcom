@@ -19,6 +19,7 @@
 /client/.env.test.local
 /client/.env.production.local
 
+
 .env
 
 /client/npm-debug.log*
@@ -26,5 +27,5 @@
 /client/yarn-error.log*
 
 npm-debug.log*
-
-src/components/test
+yarn-debug.log*
+yarn-error.log*
